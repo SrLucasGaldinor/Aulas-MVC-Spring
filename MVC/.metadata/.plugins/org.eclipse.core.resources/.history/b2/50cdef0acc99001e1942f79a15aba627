@@ -1,0 +1,8 @@
+<%@page import="model.Contato"%>
+<%
+	String nome = request.getParameter("nome");
+	String email  = request.getParameter("email");
+	
+	Contato contato = new Contato(0, nome, email);
+ 	out.print("Olá " + contato.toString());
+%>

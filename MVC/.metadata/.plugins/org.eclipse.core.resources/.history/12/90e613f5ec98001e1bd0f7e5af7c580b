@@ -1,9 +1,0 @@
-@charset "ISO-8859-1";
-
-.cor {
-	color: red;
-}
-
-.botao {
-	background-color: green;
-}

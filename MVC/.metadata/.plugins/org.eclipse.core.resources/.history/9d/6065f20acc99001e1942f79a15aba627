@@ -1,0 +1,9 @@
+package controller;
+
+public class ContatoController {
+	
+	public static boolean salvar() {
+		/*Regras de Negócio*/
+		return true;
+	}
+}

@@ -1,0 +1,28 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import model.Contato;
+import utils.Conexao;
+
+public class DaoContato {
+	
+	public static boolean salvar(Contato contato) {
+		Connection con = Conexao.getConexao();
+		String sql = "INSERT INTO tb_contatos (nome, email) VALUES (?, ?)"; 
+		try {
+			PreparedStatement stm = con.prepareStatement(sql);
+			stm.setString(0, contato.getNome());
+			stm.setString(1, contato.getEmail());
+			stm.execute();
+			
+		} catch (SQLException error) {
+			error.printStackTrace();
+			return false;
+		} finally {
+			Conexao.fecharConexao();
+		}
+		return true;
+	}
+}

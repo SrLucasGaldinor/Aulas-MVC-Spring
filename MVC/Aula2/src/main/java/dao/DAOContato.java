@@ -7,44 +7,40 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import modelos.Contato;
+import model.Contato;
 import utils.Conexao;
 
-public class DAOContato {
+public class DaoContato {
 	
 	public static boolean salvar(Contato contato) {
 		Connection con = Conexao.getConexao();
-		String sql = "INSERT INTO tb_contatos(nome, email, fone) VALUES (?, ?, ?)";
+		String sql = "INSERT INTO tb_contatos (nome, email) VALUES (?, ?)";
 		try {
 			PreparedStatement stm = con.prepareStatement(sql);
 			stm.setString(1, contato.getNome());
 			stm.setString(2, contato.getEmail());
-			stm.setString(3, "55-55");
 			stm.execute();
-			
 		} catch (SQLException error) {
 			error.printStackTrace();
 			return false;
-		} finally {
-			Conexao.fecharConexao();
 		}
 		return true;
 	}
 	
 	public static List<Contato> consultar() {
 		Connection con = Conexao.getConexao();
-		
+		String sql = "SELECT * FROM tb_contatos";
 		try {
-			PreparedStatement stm = con.prepareStatement("SELECT * FROM tb_contatos");
+			PreparedStatement stm = con.prepareStatement(sql);
 			ResultSet rs = stm.executeQuery();
 			List<Contato> contatos = new ArrayList<Contato>();
-			while (rs.next()) {
+			while(rs.next()) {
 				contatos.add(new Contato(rs.getInt("id"),
 										 rs.getString("nome"),
 										 rs.getString("email")));
 			}
 			return contatos;
-		} catch (SQLException error) {
+		} catch (Exception error) {
 			error.printStackTrace();
 		} finally {
 			Conexao.fecharConexao();

@@ -1,15 +1,13 @@
 package controller;
 
-import dao.DAOContato;
-import modelos.Contato;
+import dao.DaoContato;
+import model.Contato;
 
 public class ContatoController {
 	
 	public boolean salvar(Contato contato) {
-		/*Regras de Negócio*/
-		boolean ok = DAOContato.salvar(contato);
+		/*Regras de NegÃ³cio*/
+		boolean ok = DaoContato.salvar(contato);
 		return ok;
 	}
-	
-	
 }
