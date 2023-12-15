@@ -8,7 +8,7 @@
 	ContatoController cc = new ContatoController();
 	
 	if(cc.salvar(contato)){
-		out.print("Contato Salvo com Sucesso.");		
+		response.sendRedirect("./consultaContato.jsp");		
 	}
  	
  

@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<%@ include file="./bootstrap.jsp"%>
 <title>Consulta de Contatos</title>
 </head>
 
@@ -14,7 +15,7 @@
 	<nav>
 		<%@ include file="./menu.jsp"%>
 	</nav>
-	<table>
+	<table class="table table-striped table-light">
 		<thead>
 			<tr>
 				<th>ID</th>
