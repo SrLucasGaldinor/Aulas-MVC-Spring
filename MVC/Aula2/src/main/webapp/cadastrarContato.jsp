@@ -14,8 +14,13 @@
 		</nav>
 		<h1 class="text-center">Cadastro de Contatos</h1>
 		<form action="gravarContato.jsp" method="POST">
-			<label class="form-label">Nome</label> <input class="form-control" type="text" placeholder="Insira Nome" name="nome">
-			<label class="form-label">E-mail</label> <input class="form-control" type="text" placeholder="Insira E-mail" name="email">
+		
+			<label class="form-label">Nome</label> 
+			<input class="form-control" type="text" placeholder="Insira Nome" name="nome">
+			
+			<label class="form-label">E-mail</label> 
+			<input class="form-control" type="text" placeholder="Insira E-mail" name="email">
+			
 			<button class="btn btn-primary mt-2">Gravar</button>
 		</form>
 	</div>

@@ -21,6 +21,7 @@
 				<th>ID</th>
 				<th>Nome</th>
 				<th>E-mail</th>
+				<th>Ações</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -31,6 +32,7 @@
 				out.print("<td>" + ct.getId() + "</td>");
 				out.print("<td>" + ct.getNome() + "</td>");
 				out.print("<td>" + ct.getEmail() + "</td>");
+				out.print("<td><a href='./formEditarContato.jsp?id=" + ct.getId() + "'>Editar</a></td>");
 				out.print("</tr>");
 			}
 			%>

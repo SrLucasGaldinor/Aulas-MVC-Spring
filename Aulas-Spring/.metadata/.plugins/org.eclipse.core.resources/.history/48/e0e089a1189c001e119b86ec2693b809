@@ -1,0 +1,5 @@
+package com.example.aula.controllers;
+
+public class HomeController {
+
+}

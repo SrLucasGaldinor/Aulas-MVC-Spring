@@ -1,0 +1,105 @@
+2023-12-16 09:30:01,266 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-16 10:25:19,072 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-16 10:26:10,681 [Worker-138: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:aula:0.0.1-SNAPSHOT @ C:\Users\bombe\Desktop\Aulas-Spring\aula\pom.xml.
+2023-12-16 10:26:11,604 [Worker-138: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /aula/src/main/java
+2023-12-16 10:26:11,605 [Worker-138: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /aula/src/main/resources
+2023-12-16 10:26:11,608 [Worker-138: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /aula/src/main/resources
+2023-12-16 10:26:11,611 [Worker-138: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /aula/src/test/java
+2023-12-16 10:26:11,612 [Worker-138: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /aula/src/test/resources
+2023-12-16 10:26:12,302 [Worker-138: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2023-12-16 10:26:13,452 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 10:26:13,523 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 10:26:13,529 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 10:39:17,748 [Worker-178: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 10:39:17,758 [Worker-178: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 10:39:17,763 [Worker-178: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 10:40:09,997 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 10:40:10,005 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 10:40:10,009 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 10:40:37,870 [Worker-141: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 10:40:37,893 [Worker-141: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 10:40:37,901 [Worker-141: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 10:53:07,774 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 10:53:07,783 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 10:53:07,787 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:10:59,470 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:10:59,480 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:10:59,484 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:11:41,058 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:11:41,068 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:11:41,074 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:18:19,628 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:18:19,639 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:18:19,645 [Worker-182: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:29:57,096 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:29:57,107 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:29:57,113 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:33:07,455 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:33:07,463 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:33:07,467 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:35:58,774 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:35:58,780 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:35:58,784 [Worker-190: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:38:38,717 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:38:38,726 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:38:38,732 [Worker-189: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:41:09,067 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:41:09,076 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:41:09,079 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:49:03,195 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:49:03,204 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:49:03,208 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:51:43,673 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:51:43,679 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:51:43,682 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:52:15,228 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:52:15,241 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:52:15,247 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 11:52:35,535 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 11:52:35,549 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 11:52:35,556 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 12:38:23,291 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 12:38:23,299 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 12:38:23,303 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 12:39:08,859 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 12:39:08,866 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 12:39:08,870 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 12:41:41,395 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 12:41:41,404 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 12:41:41,407 [Worker-200: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 12:54:57,411 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 12:54:57,420 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 12:54:57,423 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 12:59:25,362 [Worker-198: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 12:59:25,371 [Worker-198: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 12:59:25,374 [Worker-198: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:00:13,375 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:00:13,380 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:00:13,384 [Worker-202: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:07:38,813 [Worker-203: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:07:38,821 [Worker-203: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:07:38,825 [Worker-203: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:10:07,239 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:10:07,245 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:10:07,248 [Worker-201: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:12:10,637 [Worker-208: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:12:10,642 [Worker-208: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:12:10,646 [Worker-208: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:18:33,574 [Worker-209: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:18:33,586 [Worker-209: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:18:33,590 [Worker-209: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:28:11,629 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:28:11,637 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:28:11,641 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:30:54,802 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:30:54,808 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:30:54,811 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:34:42,712 [Worker-217: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:34:42,718 [Worker-217: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:34:42,721 [Worker-217: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:37:20,215 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:37:20,224 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:37:20,227 [Worker-216: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
+2023-12-16 13:41:33,770 [Worker-222: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-16 13:41:33,776 [Worker-222: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-16 13:41:33,779 [Worker-222: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\bombe\Desktop\Aulas-Spring\aula\src\test\resources
