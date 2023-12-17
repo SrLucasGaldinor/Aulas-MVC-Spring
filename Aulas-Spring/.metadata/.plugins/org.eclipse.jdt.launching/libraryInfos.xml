@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="C:\Users\lucas\AppData\Local\Temp\eoi93FD.tmp\configuration\org.eclipse.osgi\107\data\-364493981\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre" version="17.0.9"/>
     <libraryInfo home="C:\Users\bombe\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858" version="17.0.9"/>
     <libraryInfo home="C:\Users\bombe\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre" version="17.0.9"/>
+    <libraryInfo home="C:\Users\lucas\AppData\Local\Temp\eoi93FD.tmp\configuration\org.eclipse.osgi\107\data\-364493981\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858" version="17.0.9"/>
 </libraryInfos>
