@@ -2,7 +2,6 @@ package com.example.aula.services;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.aula.entities.Contato;
@@ -16,12 +15,14 @@ public class ContatoService {
 	ContatoRepository repo;
 
 	public Contato consultar(Long idContato) {
+		
 		Optional<Contato> opt = repo.findById(idContato);
 		Contato contato = opt.orElseThrow(() -> new RecursoNaoEncontrado("Contato não Encontrado."));
 		return contato;
 	}
 
 	public List<Contato> consultar() {
+		
 		List<Contato> lista = repo.findAll();
 		return lista;
 	}
