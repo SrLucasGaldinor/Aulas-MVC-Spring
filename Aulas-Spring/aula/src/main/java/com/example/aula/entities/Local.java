@@ -109,6 +109,7 @@ public class Local {
 		this.cidade = cidade;
 		this.uf = uf;
 		this.cep = cep;
+	
 	}
 
 	public Local() {

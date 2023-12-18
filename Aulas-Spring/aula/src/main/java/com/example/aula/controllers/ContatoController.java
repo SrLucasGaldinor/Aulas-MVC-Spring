@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.aula.entities.Contato;
 import com.example.aula.repositories.ContatoRepository;
+import com.example.aula.services.ContatoService;
 
 @RestController
 @RequestMapping("/contatos")
@@ -25,14 +26,19 @@ public class ContatoController {
 
 	@Autowired
 	ContatoRepository repo;
+	
+	@Autowired
+	ContatoService service;
+	
+	
 
 	@PostMapping
 	public ResponseEntity<Contato> salvar(@RequestBody Contato contato) {
 		/*
 		 * contato.setId(contatos.size() + 1l); contatos.add(contato);
 		 */
-		repo.save(contato);
-		return ResponseEntity.status(HttpStatus.CREATED).body(contato);
+		/*repo.save(contato);*/
+		return ResponseEntity.status(HttpStatus.CREATED).body(service.salvar(contato));
 	}
 
 	@PutMapping("/{idContato}")
@@ -43,7 +49,7 @@ public class ContatoController {
 		 * ct.setFone(contato.getFone()); return
 		 * ResponseEntity.status(HttpStatus.OK).body(ct); } }
 		 */
-		Optional<Contato> opt = repo.findById(idContato);
+		/*Optional<Contato> opt = repo.findById(idContato);
 		try {
 			Contato ct = opt.get();
 			ct.setNome(contato.getNome());
@@ -53,12 +59,13 @@ public class ContatoController {
 			return ResponseEntity.status(HttpStatus.OK).body(ct);
 		} catch (Exception error) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Contato não Encontrado...");
-		}
+		}*/
+		return ResponseEntity.status(HttpStatus.OK).body(service.alterar(idContato, contato));
 	}
 
 	@GetMapping
 	public ResponseEntity<List<Contato>> consultar() {
-		return ResponseEntity.status(HttpStatus.OK).body(repo.findAll());
+		return ResponseEntity.status(HttpStatus.OK).body(service.consultar());
 	}
 
 	@GetMapping("/{idContato}")
@@ -67,13 +74,14 @@ public class ContatoController {
 		 * for (Contato contato : contatos) { if (contato.getId().equals(idContato)) {
 		 * return ResponseEntity.status(HttpStatus.OK).body(contato); } }
 		 */
-		Optional<Contato> opt = repo.findById(idContato);
+		/*Optional<Contato> opt = repo.findById(idContato);
 		try {
 			Contato contato = opt.get();
 			return ResponseEntity.status(HttpStatus.OK).body(contato);
 		} catch (Exception error) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Contato não Encontrado...");
-		}
+		}*/
+		return ResponseEntity.status(HttpStatus.OK).body(service.consultar(idContato));
 	}
 
 	@DeleteMapping("/{idContato}")
@@ -85,6 +93,7 @@ public class ContatoController {
 		 * ResponseEntity.status(HttpStatus.NOT_FOUND).body("Contato não Encontrado..."
 		 * ); }
 		 */
+		/*
 		Optional<Contato> opt = repo.findById(idContato);
 		try {
 			Contato contato = opt.get();
@@ -92,6 +101,8 @@ public class ContatoController {
 			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		} catch (Exception error) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Contato não Encontrado.");
-		}
+		}*/
+		service.deletar(idContato);
+		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
 }
