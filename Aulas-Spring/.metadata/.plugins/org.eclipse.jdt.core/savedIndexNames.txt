@@ -42,7 +42,6 @@ INDEX VERSION 1.134+C:\Users\bombe\Desktop\Aulas\Aulas-Spring\.metadata\.plugins
 1125929949.index
 2241516704.index
 110016241.index
-429693551.index
 3601242614.index
 1021866803.index
 1321780567.index
