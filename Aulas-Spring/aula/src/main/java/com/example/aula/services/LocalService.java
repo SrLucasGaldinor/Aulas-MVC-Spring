@@ -15,13 +15,11 @@ public class LocalService {
 	LocalRepository repo;
 	
 	public List<Local> consultar() {
-		
 		List<Local> lista = repo.findAll();
 		return lista;
 	}
 	
 	public Local consultar(Long idLocal) {
-		
 		Optional<Local> opt = repo.findById(idLocal);
 		Local loc = opt.orElseThrow(() -> new RecursoNaoEncontrado("Local não Encontrado."));
 		return loc;
@@ -33,24 +31,14 @@ public class LocalService {
 	}
 	
 	public Local alterar(Long idLocal, Local local) {
-		
-		Optional<Local> opt = repo.findById(idLocal);
-		Local loc = opt.orElseThrow(() -> new RecursoNaoEncontrado("Local não Encontrado."));
-		loc.setNome(local.getNome());
-		loc.setRua(local.getRua());
-		loc.setNumero(local.getNumero());
-		loc.setBairro(local.getBairro());
-		loc.setCidade(local.getCidade());
-		loc.setUf(local.getUf());
-		loc.setCep(local.getCep());
+		Local loc = consultar(idLocal);
+		loc = local;
 		repo.save(loc);
 		return loc;
 	}
 	
 	public void deletar(Long idLocal) {
-		
-		Optional<Local> opt = repo.findById(idLocal);
-		Local loc = opt.orElseThrow(() -> new RecursoNaoEncontrado("Local não Encontrado."));
+		Local loc = consultar(idLocal);
 		repo.delete(loc);
 	}
 }

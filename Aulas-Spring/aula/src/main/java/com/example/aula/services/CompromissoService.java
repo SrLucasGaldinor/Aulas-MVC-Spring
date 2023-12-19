@@ -31,20 +31,13 @@ public class CompromissoService {
 	}
 	
 	public Compromisso alterar(Long idCompromisso, Compromisso compromisso) {
-		Optional<Compromisso> opt = repo.findById(idCompromisso);
-		Compromisso comp = opt.orElseThrow(() -> new RecursoNaoEncontrado("Compromisso não Encontrado."));
-		comp.setDescricao(compromisso.getDescricao());
-		comp.setData(compromisso.getData());
-		comp.setHora(compromisso.getHora());
-		comp.setContato(compromisso.getContato());
-		comp.setLocal(compromisso.getLocal());
+		Compromisso comp = consultar(idCompromisso);
 		repo.save(comp);
 		return comp;
 	}
 	
 	public void deletar(Long idCompromisso) {
-		Optional<Compromisso> opt = repo.findById(idCompromisso);
-		Compromisso comp = opt.orElseThrow(() -> new RecursoNaoEncontrado("Compromisso não Encontrado."));
+		Compromisso comp = consultar(idCompromisso);
 		repo.delete(comp);
 	}
 }

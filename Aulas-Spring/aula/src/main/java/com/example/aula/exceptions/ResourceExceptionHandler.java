@@ -21,4 +21,26 @@ public class ResourceExceptionHandler {
 		err.setPath(requi.getRequestURI());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(err);
 	}
+	
+	@ExceptionHandler(RecursoJaCadastrado.class)
+	public ResponseEntity<StandardError> entidadeJaCadastrada(RecursoJaCadastrado exc, HttpServletRequest requi) {
+		StandardError err = new StandardError();
+		err.setTimestamp(Instant.now());
+		err.setStatus(HttpStatus.CONFLICT.value());
+		err.setError("Recurso Já Cadastrado.");
+		err.setMessage(exc.getMessage());
+		err.setPath(requi.getRequestURI());
+		return ResponseEntity.status(HttpStatus.CONFLICT).body(err);
+	}
+	
+	@ExceptionHandler(RecursoNaoInformado.class)
+	public ResponseEntity<StandardError> entidadeNaoInformada(RecursoNaoInformado exc, HttpServletRequest requi) {
+		StandardError err = new StandardError();
+		err.setTimestamp(Instant.now());
+		err.setStatus(HttpStatus.BAD_REQUEST.value());
+		err.setError("Recurso não Informado.");
+		err.setMessage(exc.getMessage());
+		err.setPath(requi.getRequestURI());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(err);
+	}
 }
