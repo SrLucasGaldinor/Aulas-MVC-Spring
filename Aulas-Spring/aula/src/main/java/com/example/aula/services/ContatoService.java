@@ -17,7 +17,7 @@ public class ContatoService {
 	ContatoRepository repo;
 
 	public Contato consultar(Long idContato) {
-		
+
 		Optional<Contato> opt = repo.findById(idContato);
 		Contato contato = opt.orElseThrow(() -> new RecursoNaoEncontrado("Contato não Encontrado."));
 		return contato;
@@ -31,38 +31,45 @@ public class ContatoService {
 	public Contato alterar(Long idContato, Contato contato) {
 		Contato ct = consultar(idContato);
 		validarCamposVazios(contato);
-		validarDadosJaExistentes(contato);	
+		if (ct.getEmail().equals(contato.getEmail())) {
+			ct = contato;
+			repo.save(ct);
+			return ct;
+		}
+		validarDadosJaExistentes(contato);
 		ct = contato;
 		repo.save(ct);
 		return ct;
 	}
-	
+
 	public Contato salvar(Contato contato) {
 		validarCamposVazios(contato);
+//		if(repo.findByEmail(contato.getEmail()) != null) {
+//			throw new RecursoJaCadastrado("Contato já cadastrado.");
+//		}
 		validarDadosJaExistentes(contato);
 		repo.save(contato);
 		return contato;
 	}
-	
+
 	public void validarDadosJaExistentes(Contato contato) {
 		List<Contato> lista = consultar();
-		for(Contato con : lista) {
-			if(con.getEmail().equals(contato.getEmail())) {
+		for (Contato con : lista) {
+			if (con.getEmail().equals(contato.getEmail())) {
 				throw new RecursoJaCadastrado("Email já cadastrado no Banco de Dados.");
 			}
 		}
 	}
-	
+
 	public void validarCamposVazios(Contato contato) {
-		if(contato.getNome() == null | contato.getNome() == "" |
-		   contato.getEmail() == null | contato.getEmail() == "" |
-		   contato.getFone() == null | contato.getFone() == "" ) {
+		if (contato.getNome() == null | contato.getNome() == "" | contato.getEmail() == null | contato.getEmail() == ""
+				| contato.getFone() == null | contato.getFone() == "") {
 			throw new RecursoNaoInformado("Os campos Obrigatórios devem ser Informados.");
-		}	
+		}
 	}
 
 	public void deletar(Long idContato) {
-			Contato contato = consultar(idContato);
-			repo.delete(contato);
+		Contato contato = consultar(idContato);
+		repo.delete(contato);
 	}
 }

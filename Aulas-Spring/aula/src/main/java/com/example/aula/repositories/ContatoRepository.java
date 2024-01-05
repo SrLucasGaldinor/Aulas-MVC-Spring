@@ -6,5 +6,7 @@ import com.example.aula.entities.Contato;
 
 @Repository
 public interface ContatoRepository extends JpaRepository<Contato, Long> {
-
+	
+	Contato findByEmail(String email);
+	
 }

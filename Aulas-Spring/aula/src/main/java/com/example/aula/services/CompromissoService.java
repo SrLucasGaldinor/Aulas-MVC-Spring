@@ -24,7 +24,7 @@ public class CompromissoService {
 		Compromisso comp = opt.orElseThrow(() -> new RecursoNaoEncontrado("Compromisso não Encontrado."));
 		return comp;
 	}
-	
+		
 	public Compromisso salvar(Compromisso compromisso) {
 		repo.save(compromisso);
 		return compromisso;

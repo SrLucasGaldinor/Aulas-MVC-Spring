@@ -14,4 +14,5 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatusCode"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="com.example.aula.exceptions.RecursoJaCadastrado"/>
 </qualifiedTypeNameHistroy>
