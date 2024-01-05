@@ -32,12 +32,16 @@ public class ContatoService {
 		Contato ct = consultar(idContato);
 		validarCamposVazios(contato);
 		if (ct.getEmail().equals(contato.getEmail())) {
-			ct = contato;
+			ct.setNome(contato.getNome());
+			ct.setEmail(contato.getEmail());
+			ct.setFone(contato.getFone());
 			repo.save(ct);
 			return ct;
 		}
 		validarDadosJaExistentes(contato);
-		ct = contato;
+		ct.setNome(contato.getNome());
+		ct.setEmail(contato.getEmail());
+		ct.setFone(contato.getFone());
 		repo.save(ct);
 		return ct;
 	}
